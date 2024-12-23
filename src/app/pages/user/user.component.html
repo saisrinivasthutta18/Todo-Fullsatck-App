@@ -1,0 +1,43 @@
+<div class="bg-container">
+  <div class="header-container">
+    <h1 class="head">{{ username }} Todos</h1>
+    <form class="new-task-con" (ngSubmit)="onAddTodo()">
+      <input
+        type="text"
+        name="newTask"
+        [(ngModel)]="currentTask"
+        class="task-input"
+        placeholder="Enter your task"
+      />
+      <select
+        class="priority-select"
+        name="priority"
+        [(ngModel)]="currentPriority"
+        required
+      >
+        <option value="" disabled selected>Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <select class="priority-select" name="status" [(ngModel)]="currentStatus">
+        <option value="" disabled selected>Status</option>
+        <option value="High">Pending</option>
+        <option value="Medium">Completed</option>
+      </select>
+
+      <button class="btn add-btn" type="submit">Add Todo</button>
+    </form>
+
+    <!-- <button class="btn logout-btn" (click)="onLogout()" type="button">
+      Logout
+    </button> -->
+  </div>
+  <div class="table-container">
+    <app-todos-table
+      [todos]="todos"
+      [userType]="role"
+      (todoDeleted)="fetchTodods()"
+    />
+  </div>
+</div>

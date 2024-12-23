@@ -1,0 +1,22 @@
+Fri Dec 20 2024 15:01:11 GMT+0530 (India Standard Time) 25444 Uncaught Exception1: Error: Cannot find module '../dao/UserDao'
+Require stack:
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\service\AuthService.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\controller\authController.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\routes\routes.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\app.js
+Fri Dec 20 2024 15:01:11 GMT+0530 (India Standard Time) 25444 Error stack: Error: Cannot find module '../dao/UserDao'
+Require stack:
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\service\AuthService.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\controller\authController.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\routes\routes.js
+- C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:138:16)
+    at Object.<anonymous> (C:\Users\Admin\Angular Projects\Todo-Fullsatck-App\Backend\service\AuthService.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1565:14)
+    at Object..js (node:internal/modules/cjs/loader:1708:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)

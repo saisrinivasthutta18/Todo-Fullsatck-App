@@ -1,0 +1,7 @@
+Fri Dec 20 2024 14:49:13 GMT+0530 (India Standard Time) 11632 Uncaught Exception1: Error: listen EADDRINUSE: address already in use :::3000
+Fri Dec 20 2024 14:49:13 GMT+0530 (India Standard Time) 11632 Error stack: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Admin\Angular Projects\role-based-todo-app\Backend\node_modules\express\lib\application.js:635:24)
+    at C:\Users\Admin\Angular Projects\role-based-todo-app\Backend\app.js:66:24

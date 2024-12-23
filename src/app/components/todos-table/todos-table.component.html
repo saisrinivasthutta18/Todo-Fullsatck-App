@@ -1,0 +1,69 @@
+<table class="todos-table">
+  <thead>
+    <tr>
+      <th>SI No</th>
+      <th>
+        <div>
+          <label for="username">Username:</label>
+          <select
+            *ngIf="userType !== 'user'"
+            [(ngModel)]="usernameFilter"
+            (ngModelChange)="onUserChange()"
+          >
+            <option value="All">All</option>
+            <option value="user1">User1</option>
+            <option value="user2">User2</option>
+            <option value="user3">User3</option>
+          </select>
+        </div>
+      </th>
+      <th>Todo</th>
+      <th>
+        <div>
+          <label for="status">Status:</label>
+          <select [(ngModel)]="statusFilter" (ngModelChange)="onStatusChange()">
+            <option value="All">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+      </th>
+      <th>
+        <div>
+          <label for="priority">Priority:</label>
+          <select
+            [(ngModel)]="priorityFilter"
+            (ngModelChange)="onPriorityChange()"
+          >
+            <option value="All">All</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+      </th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todos; index as i">
+      <td>{{ (currentPage - 1) * pageSize + i + 1 }}</td>
+      <td>{{ todo.username }}</td>
+      <td>{{ todo.task }}</td>
+      <td>{{ todo.status }}</td>
+      <td>{{ todo.priority }}</td>
+      <td>
+        <button
+          *ngIf="userType === 'user' && todo.status !== 'Completed'"
+          (click)="markAsCompleted(todo)"
+        >
+          Mark as Completed
+        </button>
+        <button type="button" (click)="onDeleteTodos(todo.id)">Delete</button>
+      </td>
+    </tr>
+    <tr *ngIf="todos.length === 0">
+      <td colspan="6">No todos found</td>
+    </tr>
+  </tbody>
+</table>

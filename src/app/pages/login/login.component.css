@@ -1,0 +1,76 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: azure;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  background-color: black;
+  height: 80%;
+  width: 40%;
+  border-radius: 40px;
+  padding: 20px;
+}
+.head {
+  text-align: center;
+  font-size: 2rem;
+  color: yellow;
+}
+
+.label-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  color: yellow;
+  font-size: 20px;
+}
+
+input {
+  font-size: 15px;
+  background-color: transparent;
+  border: #fff 2px solid;
+  color: yellow;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+select {
+  font-size: 15px;
+  background-color: transparent;
+  border: #fff 2px solid;
+  color: yellow;
+  border-radius: 10px;
+  padding: 4px;
+}
+option {
+  color: black;
+}
+.error-msg {
+  color: rgb(255, 0, 0);
+  font-size: small;
+}
+
+.submit-btn {
+  background-color: black;
+  color: yellow;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: yellow;
+  color: black;
+}

@@ -1,0 +1,31 @@
+<div class="bg-container">
+  <form class="form-container" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <h1 class="head">Login to Your Account</h1>
+    <select [(ngModel)]="UserType" name="role">
+      <option disabled selected value="">Select User Type</option>
+      <option value="Admin">Admin</option>
+      <option value="User">User</option>
+    </select>
+    <div class="label-input-wrapper">
+      <label for="username">Username: </label>
+      <input
+        name="username"
+        type="text"
+        [(ngModel)]="username"
+        placeholder="Enter username"
+      />
+    </div>
+
+    <div class="label-input-wrapper">
+      <label for="password">Password: </label>
+      <input
+        name="password"
+        type="password"
+        [(ngModel)]="password"
+        placeholder="Enter password"
+      />
+    </div>
+
+    <button class="submit-btn" type="submit">Login</button>
+  </form>
+</div>

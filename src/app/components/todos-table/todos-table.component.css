@@ -1,0 +1,95 @@
+.todos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 2px solid #d1d5db;
+}
+
+.todos-table thead {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.todos-table thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.todos-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s ease;
+}
+
+.todos-table tbody tr:nth-child(even) {
+  background-color: #eef2ff;
+}
+
+.todos-table tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+.todos-table td {
+  padding: 12px;
+  color: #374151;
+}
+
+.todos-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0px 10px;
+}
+
+.todos-table button:hover {
+  transform: scale(1.05);
+}
+
+.todos-table button:active {
+  transform: scale(1);
+}
+
+.todos-table button:nth-child(1) {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.todos-table button:nth-child(1):hover {
+  background-color: #d97706;
+}
+
+.todos-table button:nth-child(2) {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.todos-table button:nth-child(2):hover {
+  background-color: #b91c1c;
+}
+
+select {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px 10px;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.pagination-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

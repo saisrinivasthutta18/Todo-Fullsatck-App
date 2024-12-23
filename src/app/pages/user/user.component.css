@@ -1,0 +1,84 @@
+.bg-container {
+  min-height: 100vh;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.new-task-con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+}
+
+.task-input {
+  height: 30px;
+  width: 300px;
+  background-color: transparent;
+  font-size: 15px;
+  border: 1px solid rgb(168, 168, 7);
+  color: black;
+  border-radius: 10px;
+}
+
+.btn {
+  height: 35px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.add-btn {
+  background-color: #000;
+  color: yellow;
+}
+
+.add-btn:hover {
+  background-color: yellow;
+  color: #000;
+}
+
+.disabled-btn {
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+}
+
+.logout-btn {
+  background-color: hsl(0, 100%, 52%);
+  color: yellow;
+}
+
+.logout-btn:hover {
+  background-color: yellow;
+  color: red;
+}
+
+.priority-select {
+  height: 35px;
+  padding: 5px 5px;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  border: 1px solid rgb(168, 168, 7);
+  color: black;
+  border-radius: 10px;
+}
